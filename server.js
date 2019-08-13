@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/views'));
 
 var server = http.createServer(app);
 var request = require("request");
