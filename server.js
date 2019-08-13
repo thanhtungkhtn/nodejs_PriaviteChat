@@ -5,9 +5,9 @@ var http = require('http');
 var bodyParser = require('body-parser');
 var express = require('express');
 var router = express();
-var fs = require("fs");
-var path = require("path");
-var mime = require("mime");
+// var fs = require("fs");
+// var path = require("path");
+// var mime = require("mime");
 
 var app = express();
 app.use(logger('dev'));
