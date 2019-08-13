@@ -5,6 +5,9 @@ var http = require('http');
 var bodyParser = require('body-parser');
 var express = require('express');
 var router = express();
+var fs = require("fs");
+var path = require("path");
+var mime = require("mime");
 
 var app = express();
 app.use(logger('dev'));
@@ -13,6 +16,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/public'));
 
 var server = http.createServer(app);
 var request = require("request");
