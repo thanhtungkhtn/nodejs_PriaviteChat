@@ -1,4 +1,4 @@
-/* resetting browser stuff */
+ resetting browser stuff
 *     {
   box-sizing: border-box;
 }
@@ -16,61 +16,48 @@ body     {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* styling our header */
-header   {
-  background: #222;
-  color: #FFF;
-  padding: 20px 30px;
-}
-
 /* logo */
 #logo         {
   display: inline-block;
-  color: #FFF;
+  color: #FFF; 
   text-decoration: none;
-  width: 49%;
+  /* width: 49%; */
 }
 #logo img    {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 10px;
   vertical-align: middle;
-}
-#logo span   {
-  display: inline-block;
-}
+} 
 
 /* main navigation */
-nav     {
-  width: 50%;
-  display: inline-block;
-  text-align: right;
+.nav-link {
+  color: white !important;
 }
-nav ul   {
-  list-style: none;
-  margin: 0;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a    {
-  color: #FFF;
+nav ul li a {
   text-decoration: none;
   display: block;
   padding: 10px 15px;
-  border-radius: 3px;
+  border-radius: 5px;
   transition: 0.3s ease all;
 }
-nav ul li a:hover   {
-  background: #444;
+nav div ul li a:hover   {
+  background: #90caf9;
+} 
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+.navbar:not(.top-nav-collapse) {
+  background: rgba(197, 239, 247, 0.5) !important;
 }
 
 /* styling our footer */
 footer   {
   background: #222;
   color: #777;
-  padding: 40px;
+  padding: 20px;
+  margin-top: 100px;
   text-align: center;
 }
 footer img   {
@@ -82,20 +69,23 @@ footer img   {
 
 /* styling our main content */
 .hero           {
-  min-height: 800px;
+  min-height: 900px;
   text-align: center;
   background-image: url('../img/Untitled-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 .hero-content   {
   color: #FFF;
-  padding-top: 130px;
+  padding-top: 150px;
 }
 .hero-content h1   {
   font-size: 100px;
   margin: 0;
 }
 .hero-content p    {
+  padding-top: 150px;
   font-size: 50px;
 }
 .hero-content a    {
@@ -108,6 +98,10 @@ footer img   {
   text-decoration: none;
   font-size: 28px;
 }
+.hero-content a:hover{
+  color: teal;
+  text-decoration: none;
+}
 
 /* basic site sections */
 .site-section   {
@@ -118,9 +112,8 @@ footer img   {
   background: #EFEFEF;
 }
 .site-section-inside   {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
 }
 .section-header {
   text-align: center;
@@ -153,6 +146,86 @@ footer img   {
   margin: 0;
 }
 
+@media screen and (max-width: 480px) and (min-width: 320px){
+  .hero {
+    text-align: center;
+    max-height: 900px;
+    max-width: 480px;
+    background-image: url('../img/Untitled-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+  }
+  .hero-content   {
+    color: #FFF;
+    padding-top: 250px;
+  }
+  .hero-content h1   {
+    font-size: 30px;
+    margin: 0;
+  }
+  .hero-content p    {
+    padding-top: 50px;
+    font-size: 18px;
+  }
+  .hero-content a    {
+    display: inline-block;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .hero-content a:hover{
+    color: teal;
+    text-decoration: none;
+  }
+
+  /* basic site sections */
+  .site-section   {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .site-section-secondary   {
+    background: #EFEFEF;
+  }
+  .site-section-inside   {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .section-header h2  {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #777;
+  }
+
+  /* feature boxes */
+  .feature-box   {
+    display: inline-block;  
+  }
+  .feature-box img  {
+    margin-bottom: 12px;
+    width: 80px;
+  }
+  .feature-box h5   {
+    font-size: 20px;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+} 
+
 /* testimonial boxes */
 .testimonial-box   {
   display: inline-block;
@@ -165,8 +238,8 @@ footer img   {
   border-radius: 4px;
   margin-bottom: 15px;
 }
-.testimonial-author           {
-
+.testimonial-author {
+  
 }
 .testimonial-author img {
   float: left;
@@ -182,4 +255,4 @@ footer img   {
 }
 .testimonial-author span {
   font-size: 14px;
-}
+} 
