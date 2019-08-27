@@ -1,0 +1,101 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" type="image/png" href="/img/logo.png">
+    <title>
+        Chat with socket.io and node.js
+    </title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+ 
+            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/styleChat.css"/>
+
+    </head>
+    <body>
+
+            <div class="container" id="nickWrap">
+                    <div class="row justify-content-md-center" style="color: white">
+                            <h1>Chat Function</h1>
+                    </div>
+                <div class="row justify-content-md-center" style="color: white">
+                        
+                        <small>Enter your nickname to talk to friends</small>   
+                        &nbsp;
+                        <i class="fa fa-smile-o"></i>
+                </div>
+                <div class="row justify-content-md-center" id="nickError" style="color: white">
+                        
+                </div>
+                <div class="row justify-content-md-center" style="color: white">
+                    <div class="col-sm-8">
+                            <form id="setNick">
+                                    <div class="form-group">
+                                        
+                                        <input type="username" class="form-control" id="nickName" placeholder="Enter your nickname">
+                                        
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                    </div>
+                    
+                        
+                </div>
+            </div>
+       
+
+        <div class="container contentWrap">
+                <div class="row justify-content-md-center title-contentWrap" style="color: white">
+                        <h1>Have fun</h1>
+                </div>
+                <div class="row work-contentWrap">
+                        <div class="col-sm-7 chatWrap" id="wrapper">
+                            <div class="chat" id="style-3">
+            
+                            </div>
+                            <hr>
+                            <div class="form-send-message">
+                                    <form id="send-message">
+                                            <div class="form-group">
+                                                
+                                                <input type="username" class="form-control" id="message" placeholder="Enter your messages">
+                                                
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Send</button>
+                                        </form>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-sm-5" id="wrapper">
+                            <div class="text-center" style="color: white">
+                                <h3><i>Users Online</i></h3>
+                            </div>
+                            
+                            <div class="users" id="style-3" style="text-align: center;" onclick="oneClick(event, this);"></div>
+                        </div>
+                        
+                       
+                </div>
+            
+        </div>
+        
+        
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/lodash/lodash.js"></script>
+
+        <script src="/js/private_chat.js"></script>
+        
+    </body>
+</html>

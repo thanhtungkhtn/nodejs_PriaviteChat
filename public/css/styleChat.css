@@ -1,0 +1,95 @@
+body{
+    background-image: url('/img/sky.jpg');
+    /* background-image: url('../img/Untitled-2.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contentWrap{
+    display: none;
+}
+
+.title-contentWrap {
+    margin: 1em;
+}
+
+.work-contentWrap{
+    /* background-color: aquamarine; */
+    
+}
+
+.chatWrap{
+    float: left;
+    height: 500px;
+    width: 100%;
+    border: 3px rgb(114, 142, 233) solid
+}
+
+.chat{
+    /* border: 1px rgb(114, 142, 233) solid; */
+    height: 70%;
+    color: rgb(255, 255, 255);
+    overflow-y: scroll;
+}
+
+.form-send-message{
+    height: 30%;
+
+}
+
+.users{
+    
+    float: right;
+    border: 3px solid rgb(57, 0, 245);
+    /* border-radius: 5px; */
+    /* margin: 10px auto; */
+    margin-left: 10px;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    background-color: #d0d5d834;
+    /* overflow: hidden;  */
+    overflow-y: scroll;
+}
+
+.user-item {
+    color: white;                
+    
+    display: inline-block;
+    /* border:1px solid red; */
+    border-bottom-color: 1px solid #ff0000;
+    width: 380px;
+    height: 30px;
+    vertical-align: middle;
+    line-height:normal;
+    margin: 0 auto;
+    background-color:rgba(235, 209, 97, 0.376);
+
+    /* border-radius: 5px; */
+}
+
+#style-3::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+    background-color: #8add75;
+}
+
+.error{
+    color: red;
+}
+.whisper {
+    color: white;
+    font-style: italic;
+}

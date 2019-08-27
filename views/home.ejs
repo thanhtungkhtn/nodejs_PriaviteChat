@@ -1,0 +1,297 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" type="image/png" href="/img/logo.png">
+    <title>Reasons For Future Website</title>
+
+    <!-- attach our stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
+      <a id="logo" class="navbar-brand" href="https://www.facebook.com/ReasonForFuture/">
+        <img class="mx-auto rounded-circle" src="/img/logo.png" alt="Logo">
+        <b><i>Reasons For Future</i></b>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="/home/dashboard">Home </a>
+          </li>
+          <li class="nav-item">
+            <% if (loginin.loginin) { %>
+              <a class="nav-link" href="/home/profile"><%= user.user_name %></a>
+              <% }%>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/messenger">Messenger </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/about">About </a>
+          </li> 
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <% if (loginin.loginin) { %>
+            
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/home/logout">Logout</a>
+                </li>
+            </ul>
+        <% } else { %>
+
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+              <a class="nav-link" href="/signup">Sign Up </a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="/login">Login </a>
+          </li>
+        </ul>
+        <% } %>
+      </div>
+    </nav>
+  </header>
+
+  <!-- the content -->
+  <main>
+
+    <!-- hero content -->
+    <div class="hero">
+        <!-- content for the hero -->
+        <div class="hero-content">
+            <h1 class="hero-title">Reasons For Future</h1>
+            <p>Great successes always start from small jobs.</p>
+
+            <a href="/about">Learn More</a>
+            <a href="/signup">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- features section -->
+    <div class="site-section container">
+
+        <div class="section-header">
+            <h2>All Features</h2>
+        </div>
+
+        <div class="site-section-inside row ">
+
+            <div class="feature-box col-sm-4">
+              <div class="text-center">
+                  <img src="/img/like.png" class="img-fluid" alt="Easy to Use">
+                  <h5>Easy to Use</h5>
+                  <p>Just think of how easy this is to use. Toddlers can do it. So can you!</p>
+              </div>
+            </div>
+
+            <div class="feature-box col-sm-4">
+                <div class="text-center">
+                  <img src="/img/faces.png" class="img-fluid" alt="Fun to Use">
+                  <h5>Fun to Use</h5>
+                  <p>Just think of how easy this is to use. Toddlers can do it. So can you!</p>
+                </div>                
+            </div>
+
+            <div class="feature-box col-sm-4">
+              <div class="text-center">
+                <img src="/img/heart.png" class="img-fluid" alt="Fun to Use">
+                <h5>You'll Love It</h5>
+                <p>Just think of how easy this is to use. Toddlers can do it. So can you!</p>
+              </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- testimonials section -->
+    <div class="site-section site-section-secondary container">
+
+      <div class="section-header">
+          <h2>What the people say</h2>
+      </div>
+
+      <div class="site-section-inside row">
+
+          <div class="testimonial-box col-sm-4">
+              <div class="testimonial-content">
+                  Their service is by far the most influential I've ever seen.
+              </div>
+              <div class="testimonial-author ">
+                  <img src="/img/person-male.png" alt="David East">
+                  <h5>Thanh Tung</h5>
+                  <span>HCMUS</span>
+              </div>
+          </div>
+
+          <div class="testimonial-box col-sm-4">
+              <div class="testimonial-content">
+                  Their service is by far the most influential I've ever seen.
+              </div>
+              <div class="testimonial-author">
+                  <img src="/img/person-male.png" alt="Holly Lloyd">
+                  <h5>Thanh Tung</h5>
+                  <span>HCMUS</span>
+              </div>
+          </div>
+
+          <div class="testimonial-box col-sm-4">
+              <div class="testimonial-content">
+                  Their service is by far the most influential I've ever seen.
+              </div>
+              <div class="testimonial-author">
+                  <img src="/img/person-male.png" alt="Brad Green">
+                  <h5>Thanh Tung</h5>
+                  <span>HCMUS</span>
+              </div>
+          </div>
+
+      </div>
+    </div>
+
+  </main>
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Address</h5>
+  
+          <p><b>Address: </b>Phú Xuyên, Hà Nội</p>
+          <p><b>Tel: </b>(+84) 9 6156 1701</p>
+          <p><b>Email: </b>reasonforfuter@gmail.com</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resources</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://nodejs.org">Nodejs</a>
+            </li>
+            <li>
+              <a href="https://vuejs.org/">Vuejs</a>              
+            </li>
+            <li>
+              <a href="https://adonisjs.com/">Adonis</a>
+            </li>
+            <li>
+              <a href="https://flutter.dev">Flutter</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+
+        <div class="col-md-3 mx-auto">
+  
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Follow Us</h5>
+    
+            <ul class="list-unstyled">
+              <li> 
+                <i class="fa fa-github fa-2x"></i>
+                <a href="https://github.com/thanhtungkhtn"> Github</a>            
+              </li>
+              
+              <li>
+                <i class="fa fa-youtube-square fa-2x"></i>
+                <a href="https://www.youtube.com/channel/UC06xO_vBt9cqUGXz5PB2FRA"> Youtube</a>
+              </li>
+              <a>
+                <i class="fa fa-facebook-square fa-2x"></i>
+                <a href="https://www.facebook.com/ReasonForFuture/">FaceBook</a>
+              </li>
+              <li>
+                <a href="#!"></a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">FAQ's</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!"></a>
+            </li>
+            <li>
+              <a href="#!"></a>
+            </li>
+            <li>
+              <a href="#!"></a>
+            </li>
+            <li>
+              <a href="#!"></a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      <img src="/img/sign.png" class="img-fluid" alt="Footer Logo">
+      © 2019 Copyright:
+      <a href="https://www.facebook.com/ReasonForFuture/"> @Pham Thanh Tung </a><br>
+      <a href="https://www.hcmus.edu.vn/">© University of Science HoChiMinh City © Vietnam National University HoChiMinh City.</a>
+    </div>
+    <!-- Copyright -->  
+  </footer>
+  <!-- Footer -->
+
+</body>
+</html>

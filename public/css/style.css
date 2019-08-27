@@ -19,7 +19,7 @@ body     {
 /* logo */
 #logo         {
   display: inline-block;
-  color: #FFF; 
+  color: rgb(49, 238, 105); 
   text-decoration: none;
   /* width: 49%; */
 }
@@ -33,7 +33,7 @@ body     {
 
 /* main navigation */
 .nav-link {
-  color: white !important;
+  color: rgb(38, 35, 219) !important;
 }
 nav ul li a {
   text-decoration: none;
