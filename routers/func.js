@@ -7,14 +7,16 @@ exports.messenger = function(req, res, next){
     // console.log('ddd='+userId);
 
     
-    if(loginIn){
-        res.render('private_mes', {user:user, loginin: req.session});   
-    } else {
-        // alert();
-        console.log('Please Login before ^^!');
-       res.redirect("/login");
-       return;
-    }   
+    // if(loginIn){
+    //     res.render('private_mes', {user:user, loginin: req.session});   
+    // } else {
+    //     // alert();
+    //     console.log('Please Login before ^^!');
+    //    res.redirect("/login");
+    //    return;
+    // }   
+
+    return res.render('private_mes', {user:user, loginin: req.session});
  };
 
  /*-------------------about page call-------------------*/
@@ -26,12 +28,14 @@ exports.about = function(req, res, next){
     // console.log('ddd='+userId);
 
     
-    if(loginIn){
-        res.render('about', {user:user, loginin: req.session});   
-    } else {
-        // alert('Please Login before ^^!');
-        console.log('Please Login before ^^!');
-       res.redirect("/login");
-       return;
-    }   
+    // if(loginIn){
+    //     res.render('about', {user:user, loginin: req.session});   
+    // } else {
+    //     // alert('Please Login before ^^!');
+    //     console.log('Please Login before ^^!');
+    //    res.redirect("/login");
+    //    return;
+    // }   
+
+    return res.render('about', {user:user, loginin: req.session});   
  };

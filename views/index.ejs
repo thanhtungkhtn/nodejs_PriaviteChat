@@ -84,7 +84,15 @@
                                             Sign Up Here
                                         </a>
                                         </div>
+                                        
+                                        <div class="" style="float: right">
+                                            <fb:login-button 
+                                                scope="public_profile,email"
+                                                onlogin="checkLoginState();">
+                                            </fb:login-button>
+                                        </div>
                                     </div>
+                                    
                                 </div>   
                             </form>    
  
@@ -92,12 +100,7 @@
  
                         </div>                    
             </div> 
-            <div class="text-center">
-                <fb:login-button 
-                    scope="public_profile,email"
-                    onlogin="checkLoginState();">
-                </fb:login-button>
-            </div>
+            
 
         </div>
        

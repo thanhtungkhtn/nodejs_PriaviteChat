@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/scroll.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('.progress-bar').waypoint(function() {
+            $('.progress-bar').css({
+                animation: "animate-positive 2s",
+                opacity: "1"
+            });
+        }, { offset: '75%' });
+    });
+
+    </script>
+    
+    <style>
+    #about-us {
+    background-color: white;
+    padding: 60px 0;
+    }
+    
+    #about-us h2 {
+    margin-top: 0;
+    color: #333;
+    }
+    
+    #about-us .lead {
+    font-size: 16px;
+    margin-bottom: 10px;
+    }
+    
+    #about-us h1 {
+    margin-bottom: 30px;
+    }
+    
+    .progress-title{
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin: 0 0 10px 0;
+    }
+    
+    .progress{
+        height: 20px;
+        line-height: 15px;
+        border-radius: 5px;
+        background: #f0f0f0;
+        margin-bottom: 30px;
+        box-shadow: none;
+        overflow: visible;
+    }
+    
+    .progress-bar{
+        position: relative;
+        border-radius: 0;
+        opacity: 0;
+    }
+    
+    .progress .progress-value{
+        display: block;
+        font-size: 13px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 8px;
+    }
+    
+    @-webkit-keyframes animate-positive{
+        0% { width: 0%; }
+    }
+    @keyframes animate-positive{
+        0% { width: 0%; }
+    }
+    </style>
+
+</head>
+<body>
+        <section id="about-us">
+                <div class="container">
+                <div class="row">
+                <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About Us</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6">
+                <div class="about-info">
+                <h2>About us</h2>
+                <p style="color: #333">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p style="color: #333">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <h3 class="progress-title">HTML5</h3>
+                <div class="progress">
+                <div class="progress-bar" style="background-color: #34b1c4; width: 90%;">
+                <div class="progress-value">90%</div>
+                </div>
+                </div>
+                <h3 class="progress-title">JS</h3>
+                <div class="progress">
+                <div class="progress-bar" style="background-color: #34b1c4; width: 45%;">
+                <div class="progress-value">45%</div>
+                </div>
+                </div>
+                <h3 class="progress-title">CSS3</h3>
+                <div class="progress">
+                <div class="progress-bar" style="background-color: #34b1c4; width: 78%;">
+                <div class="progress-value">78%</div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+</body>
+</html>
