@@ -1,7 +1,7 @@
-/*!
- * Mobirise v4 theme (https://mobirise.com/)
- * Copyright 2017 Mobirise
- */
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   background-color: #eeeeee; }
 
