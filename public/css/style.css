@@ -19,7 +19,7 @@ body     {
 /* logo */
 #logo         {
   display: inline-block;
-  color: rgb(49, 238, 105); 
+  color: rgb(192, 2, 2); 
   text-decoration: none;
   /* width: 49%; */
 }
@@ -33,7 +33,7 @@ body     {
 
 /* main navigation */
 .nav-link {
-  color: rgb(38, 35, 219) !important;
+  color: rgb(204, 109, 0) !important;
 }
 nav ul li a {
   text-decoration: none;
@@ -43,13 +43,13 @@ nav ul li a {
   transition: 0.3s ease all;
 }
 nav div ul li a:hover   {
-  background: #90caf9;
+  background: rgb(255, 255, 255);
 } 
 .top-nav-collapse {
-  background-color: #424f95 !important;
+  background-color: #ff0000 !important;
 }
 .navbar:not(.top-nav-collapse) {
-  background: rgba(197, 239, 247, 0.5) !important;
+  background: rgba(252, 217, 196, 0.623) !important;
 }
 
 /* styling our footer */
@@ -71,7 +71,7 @@ footer img   {
 .hero           {
   min-height: 900px;
   text-align: center;
-  background-image: url('../img/Untitled-2.jpg');
+  background-image: url('../img/IMG_3028.JPG');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
